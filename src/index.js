@@ -23,3 +23,12 @@ exports.max = function max(array) {
     }
     return maxArr;
 };
+
+exports.avg = function avg(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    var result = sum / array.length;
+    return result;
+};
