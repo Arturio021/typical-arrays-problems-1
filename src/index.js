@@ -13,3 +13,13 @@ exports.min = function min(array) {
         return minArr;
     }
 };
+
+exports.max = function max(array) {
+    maxArr = array[0];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > maxArr) {
+            maxArr = array[i];
+        }
+    }
+    return maxArr;
+};
